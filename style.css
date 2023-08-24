@@ -1,0 +1,18 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+/*main*/
+
+.header{
+    height: 100px;
+    background-color: #88D9E6;
+}
+
+.carousel{
+    padding:50px;
+    margin:10px;
+}
+
+/* Mapa del mundo*/
