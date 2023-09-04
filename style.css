@@ -1,18 +1,48 @@
 *{
     padding:0px;
     margin:0px;
+    font-size: 30px;
 }
 
 /*main*/
+body{
+    display: flexbox;
+}
 
 .header{
     height: 100px;
-    background-color: #88D9E6;
+    background-color: #57789E;
 }
 
-.carousel{
-    padding:50px;
-    margin:10px;
-}
 
+
+.proposito{
+background-color: #1A293F;
+height: 200px;
+
+}
 /* Mapa del mundo*/
+.mapamundi{
+    background-color:#273654;
+    height: 400px;
+
+
+}
+
+.lineadetiempo{
+background-color:#57789E;
+height: 400px;
+
+}
+
+.galeriaarte{
+background-color: #E0E1DD;
+height: 600px;
+
+}
+
+.footer{
+    background-color: #0D1B2A;
+height: 200px;
+
+}
