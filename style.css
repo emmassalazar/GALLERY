@@ -1,7 +1,7 @@
 *{
     padding:0px;
     margin:0px;
-    font-size: 30px;
+    font-size: 100%;
 }
 
 /*main*/
@@ -12,34 +12,42 @@ body{
 .header{
     height: 100px;
     background-color: #57789E;
+    position:sticky;
 }
 
 
 
-.proposito{
-background-color: #1A293F;
-height: 200px;
 
-}
 /* Mapa del mundo*/
-.mapamundi{
+.bloque1{
     background-color:#273654;
     height: 400px;
-
+text-align: left;
 
 }
+#mapamundi{
+    width: 300px;
+    height:300px;
+    float:right;
+    margin:30px;
+}
 
-.lineadetiempo{
+.bloque2{
 background-color:#57789E;
 height: 400px;
 
 }
 
-.galeriaarte{
+.bloque3{
 background-color: #E0E1DD;
 height: 600px;
 
 }
+
+.bloque4{
+    background-color: #1A293F;
+    height: 400px;
+    }
 
 .footer{
     background-color: #0D1B2A;
