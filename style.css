@@ -27,14 +27,14 @@ body{
     position:relative;
 }
 
-#textomapamundi{
+#textobloque1{
     width: 700px;
     height:200px;
     text-align: justify;
     top:50%; left:60%;transform: translate(-50%, -50%); position:absolute;
 
 }
-#mapamundi{
+#imgbloque1{
     width: 300px;
     height:300px;
     float:left;
@@ -45,7 +45,21 @@ body{
 .bloque2{
 background-color:#57789E;
 height: 400px;
+}
 
+#textobloque2{
+    width: 700px;
+    height:200px;
+    text-align: justify;
+    top:50%; left:60%;transform: translate(-50%, -50%); position:absolute;
+
+}
+#imgbloque2{
+    width: 300px;
+    height:300px;
+    float:left;
+    border:1px solid #000;
+    margin:50px;
 }
 
 .bloque3{
