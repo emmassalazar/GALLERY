@@ -22,14 +22,24 @@ body{
 .bloque1{
     background-color:#273654;
     height: 400px;
-text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr 1fr);
+    position:relative;
+}
+
+#textomapamundi{
+    width: 700px;
+    height:200px;
+    text-align: justify;
+    top:50%; left:60%;transform: translate(-50%, -50%); position:absolute;
 
 }
 #mapamundi{
     width: 300px;
     height:300px;
-    float:right;
-    margin:30px;
+    float:left;
+    border:1px solid #000;
+    margin:50px;
 }
 
 .bloque2{
@@ -48,6 +58,13 @@ height: 600px;
     background-color: #1A293F;
     height: 400px;
     }
+
+.cards{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    top:50%; left:50%;transform: translate(-50%, -50%); position:relative;
+
+}
 
 .footer{
     background-color: #0D1B2A;
