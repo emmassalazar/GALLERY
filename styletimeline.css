@@ -1,0 +1,12 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    background-color: #0D1B2A;
+}
+
+.portada, .prehistoria, .mesopotamia{
+    height: 1000px;
+    background-color: #0D1B2A;
+}

@@ -3,65 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GALLERY</title>
+    <link rel="icon" href="imagenes/dibujo hola.svg" type="image/icon type">
     <link rel="STYLESHEET" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <div class="header">
-            <div class="logo"><img src=""></div>
-            <div class="home"><img src=".imagenes/logocasa.png"></div>
-            
-        </div>
-    </header>
+  <header>
+    <div class="header">
+      <div class="navbar">
+        <a href="main.html"><img src="imagenes/dibujo hola.svg" width="50px" class="logo"></a>
+      <div class="title"><h1>GALLERY</h1></div>
+  
+      <div class="btn-group">
+        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+          Menú
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="info.html"><button class="dropdown-item" type="button">¿Qué es el Arte?</button></a></li>
+          <li><a href="tiposdearte.html"><button class="dropdown-item" type="button">Formas de Arte</button></a></li>
+          <li><a href="lineadetiempo.html"><button class="dropdown-item" type="button">Etapas del Arte</button></a></li>
+          <li><a href="mapadelmundo.html"><button class="dropdown-item" type="button">Arte de Latinoamérica</button></a></li>
+  
+  
+        </ul>
+      </div>
+      </div>
+    </div>
+  </header>
 
     <main>
-
-      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://www.thesistinechapel.org/images/ceiling-sistine-chapel.jpg" class="d-block w-100" alt="..." height="600px">
-              </div>
-              <div class="carousel-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Gradient_color_wheel.png" class="d-block w-100" alt="..." width="100px" height="500px">
-              </div>
-              <div class="carousel-item">
-                <img src="https://png.pngtree.com/element_our/20190531/ourmid/pngtree-candy-color-watercolor-ink-ink-dot-element-image_1310673.jpg" class="d-block w-100" alt="..." width="100px" height="500px">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+      <div class="bloque0">
+  <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.thesistinechapel.org/images/ceiling-sistine-chapel.jpg" class="d-block w-100" alt="..." height="600px">
       </div>
-
-      <div class="proposito">
-
+      <div class="carousel-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Gradient_color_wheel.png" class="d-block w-100" alt="..." width="100px" height="500px">
       </div>
-
-      <div class="mapamundi">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex mollitia earum fugit corporis odio pariatur iste eos voluptatum, dolorum neque exercitationem cumque ea! Corrupti perferendis, incidunt praesentium natus labore assumenda!</p>
-        <img src="" alt="mapamundi">
+      <div class="carousel-item">
+        <img src="https://png.pngtree.com/element_our/20190531/ourmid/pngtree-candy-color-watercolor-ink-ink-dot-element-image_1310673.jpg" class="d-block w-100" alt="..." width="100px" height="500px">
       </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
 
-      <div class="lineadetiempo">
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi doloremque illum, eos dolore exercitationem corporis debitis ipsum aliquam aliquid. Nihil repudiandae repellat nemo eius modi beatae a eligendi, earum voluptatibus.</p>
-      </div>
-
-      <div class="galeriaarte">
+      <div class="bloque1">
+        <div class="textobloque1">
+          <h1>EXPLORA EL ARTE LATINO</h1><br> 
+          <a class="btn" href="mapadelmundo.html" role="button">Explorar</a></div>
+        <img src="https://madmuseum.org/sites/default/files/styles/page_hero/public/2014/01/1.%20La%20Ciudad%20Frondosa%20%282011%3A2012%29.jpg?itok=L76qZq4j" alt="worldlink" class="imgbloque1">
         
       </div>
+
+      <div class="bloque2">
+<div class="textobloque2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi doloremque illum, eos dolore exercitationem corporis debitis ipsum aliquam aliquid. Nihil repudiandae repellat nemo eius modi beatae a eligendi, earum voluptatibus.
+  <br><br><a class="btn" href="lineadetiempo.html" role="button">Explorar</a>
+</div>
+  <img src="https://images.ctfassets.net/cnu0m8re1exe/41ocBBXMRhPLIo7UTkM7e9/c5c129bd3d0b0f59fe92636ff379cc83/shutterstock_2068266221.jpg?fm=jpg&fl=progressive&w=660&h=433&fit=fill" alt="lineadetiempo" class="imgbloque2">
+      </div>
+
+      <div class="bloque3">
+        <div class="cards-grid">
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front" style="background-image: url('https://i.pinimg.com/564x/13/ce/1a/13ce1a83c6728beb5dfcb4f3149f5bd0.jpg');">
+
+                  </div>
+                  <div class="flip-card-back">
+                      Studio Ghibli, dirigida y creada por Hayao Miyazaki en 1988. Tras realizar esta película, se adoptó como logotipo del estudio a los Totoros. Es la tercera película del estudio tras su fundación.
+                  </div>
+              </div>
+          </div>
+
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front" style="background-image: url('https://i.pinimg.com/564x/3c/9d/46/3c9d46cfe19259df561e6f5e69144149.jpg');">
+
+                  </div>
+                  <div class="flip-card-back">
+                      Studio Ghibli, dirigida y creada por Hayao Miyazaki en 1988. Tras realizar esta película, se adoptó como logotipo del estudio a los Totoros. Es la tercera película del estudio tras su fundación.
+                  </div>
+              </div>
+          </div>
+
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front" style="background-image: url('https://i.pinimg.com/564x/51/c3/5d/51c35def59be21640dcd04a9c7d037ae.jpg');">
+
+                  </div>
+                  <div class="flip-card-back">
+                      Studio Ghibli, dirigida y creada por Hayao Miyazaki en 1988. Tras realizar esta película, se adoptó como logotipo del estudio a los Totoros. Es la tercera película del estudio tras su fundación.
+                  </div>
+              </div>
+          </div>
+      </div>
+        
+    </div>
+
+      <div class="bloque4">
+          <div class="textobloque4">
+            <h1>EXPLORA EL ARTE LATINO</h1><br> 
+            <a class="btn" href="mapadelmundo.html" role="button">Explorar</a></div>
+          </div>
+  
+      </div>
+
+      <div class="bloque5">
+
+      </div>
+
+      <div class="bloque6">
+        <div class="cards">
+          <div class="card" style="width: 18rem;">
+            <img src=".." class="card-img-top" alt="..." width="150px" height="150px">
+            <div class="card-body">
+              <h5 class="card-title">¿Qué es el arte?</h5>
+              <p class="card-text">Some quick example text to build on the card title </p>
+              <a href="#" class="btn">Go somewhere</a>
+            </div>
+          </div>
+  
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">¿Por qué estudiar el arte?</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn">Go somewhere</a>
+            </div>
+          </div>
+  
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn">Go somewhere</a>
+            </div>
+        </div>
+
+      </div>
+
     </main>
 
     <footer>
-        <div class="footer"></div>
+      <div class="creditos">
+        E.E.S.T N°2<br>Materia: Lab. de Sistemas Operativos.<br>Docente: Ruíz, Pablo.<br>Alumnos: Salazar, Emma.<br>Loureiro, Leopoldo.<br>Llamas, Juan Carlos.<br>Pochettino, Jonathan.<br></div> 
+
+       
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
