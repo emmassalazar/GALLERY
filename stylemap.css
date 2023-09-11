@@ -1,0 +1,102 @@
+
+
+.mapa{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:10px;
+    margin: 50px;
+    background-color: #0d1b2a;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.maptext{
+    font-size: 35px;
+    position: relative;
+    float: right;
+    flex: 1;
+  
+    background-color: #0d1b2a;
+    color: #EBECE9;
+}
+
+.mainmexico{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    
+}
+
+.mexicotexto{
+text-align: justify;
+    flex: 1;
+}
+
+.mexicosidecards{
+margin: 50px;
+position: relative;
+justify-content: right;
+
+display: flex;
+flex-direction: column;
+gap: 10px;
+
+}
+
+
+
+
+
+
+
+.card{
+    height: 300px;
+    width: 300px;
+     padding: 20px;
+    color: white;
+    background-image: url("https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80");
+    background-size: cover;
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#EBECE9;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.content *{
+    transform: translateY(-70%);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.content h2{
+    font-size: 35px;
+    margin: 15px;
+    font-weight: 700;
+}
+
+.content h3{
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+.card:hover .content{
+    opacity: 1;
+}
+
+.card:hover .content *{
+    opacity: 1;
+    transform: translateY(0);
+}
