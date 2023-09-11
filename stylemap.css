@@ -12,7 +12,6 @@
     align-items: center;
 
 }
-
 .maptext{
     font-size: 35px;
     position: relative;
@@ -23,21 +22,21 @@
     color: #EBECE9;
 }
 
-.mainmexico{
+
+
+.mainmexico, .mainarg{
     position:relative;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-
-    
+    flex-wrap: wrap;  
 }
 
-.mexicotexto{
+.mexicotexto, .argtexto{
 text-align: justify;
     flex: 1;
 }
 
-.mexicosidecards{
+.mexicosidecards, .argsidecards{
 margin: 50px;
 position: relative;
 justify-content: right;
