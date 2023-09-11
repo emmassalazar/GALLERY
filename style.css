@@ -15,18 +15,15 @@ body{
 }
 
 /*header*/
-
 .header{
     height: 100px;
     background-color: #415A77;
 }
-
 .logo{
     position: relative;
     padding: 5px;
     margin-left: 100px;
 }
-
 .btn-group{
     position:relative;
     right: 100px;
@@ -35,8 +32,7 @@ body{
 }
 
 
-
-/* Recurso Mapa*/
+/* Primeros 2 bloques*/
 .bloque1{
     background-color:#EBECE9;
     height: 400px;
@@ -45,13 +41,11 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-
 .textobloque1{
     width: 700px;
     height:200px;
     text-align: justify;
     top:50%; left:60%;transform: translate(-50%, -50%); position:absolute;
-
 }
 .imgbloque1{
     width: 500px;
@@ -60,9 +54,7 @@ body{
     border:1px solid #000;
     margin:50px;
     position:absolute;
-
 }
-
 
 .bloque2{
     background-color:#EBECE9;
@@ -86,25 +78,21 @@ body{
     border:1px solid #000;
     margin:50px;
     position:absolute;
-
 }
 
 
-
+/*Bloque 3*/
 .bloque3{
 background-color: #415A77;
 height: 600px;
 max-width: 100%;
-
 }
-
   .cards-grid {
     display: flex;
     justify-content: center;
     grid-gap: 10px;
     padding-bottom: 60px;
   }
-  
   /* FLIP CARD */
   .flip-card {
     width: 320px;
@@ -144,37 +132,37 @@ max-width: 100%;
   .flip-card:hover .flip-card-inner {
     transform: rotateY(-180deg);
   }
-  
 
-
-
+  /*BLOQUE 4*/
 .bloque4{
     background-color: #EBECE9;
     height: 400px;
     }
 
 
-
+/*BLOQUE 5*/
 .bloque5{
     background-color: #EBECE9;
     height: 600px;
-    
     }
 
+
+/*BLOQUE 6*/
 .bloque6{
-     background-color:#415A77;
-     height: 400px;
-     }
+background-color:#415A77;
+ height: 600px;
+}
+.cards{
+     display: flex;
+    justify-content: space-evenly;
+align-items: center;
+    grid-gap: 80px;
+    padding-bottom: 60px;}
 
-     .cards{
-        display: flex;
-        justify-content: space-evenly;
-        grid-gap: 80px;
-        padding-bottom: 60px;
-    
-    }
+
     
 
+/*FOOTER*/
 footer{
 height: 200px;
 margin-top: 100px;
