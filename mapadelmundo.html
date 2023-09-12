@@ -6,12 +6,14 @@
     <title>GALLERY</title>
     <link rel="icon" href="imagenes/dibujo hola.svg" type="image/icon type">
     <link rel="STYLESHEET" href="style.css">
+    <link rel="STYLESHEET" href="stylemap.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
 </head>
+
+
 <body>
 <header>
   <div class="header">
@@ -24,31 +26,71 @@
         Menú
       </button>
       <ul class="dropdown-menu">
-        <li><a href="tiposdearte.html"><button class="dropdown-item" type="button">¿Qué es el Arte?</button></a></li>
+        <li><a href="info.html"><button class="dropdown-item" type="button">¿Qué es el Arte?</button></a></li>
         <li><a href="tiposdearte.html"><button class="dropdown-item" type="button">Formas de Arte</button></a></li>
         <li><a href="lineadetiempo.html"><button class="dropdown-item" type="button">Etapas del Arte</button></a></li>
         <li><a href="mapadelmundo.html"><button class="dropdown-item" type="button">Arte de Latinoamérica</button></a></li>
-
-
       </ul>
     </div>
     </div>
   </div>
 </header>
 
-<section class="map-section">
-  <img src="https://t4.ftcdn.net/jpg/03/06/49/25/360_F_306492512_Cnv1Ie8ZZ1qWMhtFJAupzafY9DGf5Bi8.jpg" alt="Worldmap" usemap="#worldmap" width="600" height="400">
-  <map name="worldmap">
-    <area shape="rect" coords="240,110,330,340" alt="Africa" href="main.html" target="_blank" title="Visit Africa">
-<!--     <area shape="rect" coords="32,10,270,260" alt="antartica" href="https://en.wikipedia.org/wiki/Antarctica"> -->
-    <area shape="rect" coords="53,190,190,18" alt="n america" href="main.html" title="Visit North America">
-    <area shape="rect" coords="100,110,210,400" alt="s america" href="https://en.wikipedia.org/wiki/South_America" title="Visit South America">
-    
-<area shape="rect" coords="300,100,500,200" alt="asia" href="https://en.wikipedia.org/wiki/Asia" title="Visit Asia">
-    <area shape="rect" coords="280,20,500,270" alt="europe" href="https://en.wikipedia.org/wiki/Europe" title="Visit Europe">
-    <area shape="rect" coords="280,250,700,700" alt="australia" href="https://en.wikipedia.org/wiki/Australia" title="Visit Australia">
+<section class="mapa">
+  <img src="https://www.nicepng.com/png/detail/345-3453781_colombia-puerto-rico-on-latin-america-map.png" usemap="#image-map" >
+
+  <map name="image-map">
+      <area target="" alt="mexico" title="mexico" href="#mexico" coords="229,38,269,47,282,54,296,64,301,82,300,98,307,111,345,100,346,113,321,130,306,127,287,123,271,113,246,86,234,66,230,47" shape="poly">
+      <area target="" alt="brasil" title="brasil" href="#brasil" coords="430,195,449,198,452,183,473,179,477,191,488,194,501,192,514,184,517,195,517,206,529,207,546,214,565,221,582,228,588,233,586,243,577,256,570,270,569,283,565,299,556,311,547,318,531,322,519,332,516,343,507,350,492,360,482,351,485,341,495,333,497,326,489,313,481,308,477,285,469,277,458,268,449,263,440,251,429,257,419,252,410,240,412,228,428,222,425,202,427,197" shape="poly">
+      <area target="" alt="argentina" title="argentina" href="#argentina" coords="439,310,454,311,467,319,477,326,472,335,480,336,489,331,479,343,471,354,468,362,468,369,470,377,464,386,450,394,440,397,441,403,434,412,425,422,431,427,424,437,420,447,410,441,409,430,413,414,413,402,415,394,418,381,420,370,423,352,423,344,431,322,437,314" shape="poly">
+      <area target="" alt="venezuela" title="venezuela" href="#venezuela" coords="415,144,421,153,430,152,437,153,448,154,457,156,467,159,469,165,468,173,461,178,456,181,450,184,447,193,438,191,437,182,438,176,429,176,420,170,413,164,411,156" shape="poly">
+      <area target="" alt="colombia" title="colombia" href="" coords="410,149,396,160,390,166,390,176,390,185,384,194,391,200,401,203,409,211,417,214,424,213,425,195,435,192,435,179,416,170" shape="poly">
+      <area target="" alt="peru" title="peru" href="#peru" coords="400,207,408,213,423,217,414,225,408,235,408,243,413,252,420,258,431,263,428,272,427,279,422,291,412,284,401,276,394,272,392,261,387,250,381,237,377,227" shape="poly">
+      <area target="" alt="bolivia" title="bolivia" href="#bolivia" coords="432,257,441,253,450,264,462,271,472,283,476,292,466,297,457,300,457,305,447,309,435,311,431,301,428,288" shape="poly">
+      <area target="" alt="chile" title="chile" href="#chile" coords="423,293,433,314,424,336,419,364,414,380,413,400,408,427,410,451,403,433,401,421" shape="poly">
   </map>
+  <div class="maptext">Bienvenido a nuestro mapa interactivo de América Latina.<br> Haga clic en el país que desee explorar para acceder a información cultural y artística relacionada con el.</div>
 </section>
+
+<div id="argentina"> 
+  <div class="mainmexico">
+    <div class="mexicotexto">
+      <h1 style="text-align: center;">ARGENTINA</h1>
+      Argentina es un país ubicado en América del Sur y es el segundo país más grande de América Latina después de Brasil. Limita al oeste con Chile, al norte con Bolivia y Paraguay, al este con Brasil y Uruguay, y al sur con el océano Atlántico. Su extenso territorio abarca una variedad de paisajes, desde las majestuosas montañas de la cordillera de los Andes en el oeste hasta las vastas llanuras de la región pampeana en el centro y las tierras frías y ventosas de la Patagonia en el sur.<br>El país es conocido por su diversidad geográfica, que incluye montañas, selvas tropicales, desiertos, glaciares y una extensa costa atlántica. Además, Argentina es famosa por su producción de vinos, carne de res de alta calidad y una rica tradición en tango.<br>Argentina es un país con una vibrante escena artística que ha influido en todo el mundo. Entre sus contribuciones más destacadas se encuentra el tango, un género de música y danza originario de las calles de Buenos Aires y Montevideo, Uruguay. Argentina es ampliamente reconocida como la cuna del tango, y esta expresión artística es parte integral de su cultura. Los salones de tango y las milongas se pueden encontrar en todo el país.<br>La literatura argentina también ha dejado una marca significativa en el mundo de las letras. El país ha producido una serie de autores de renombre mundial, como Jorge Luis Borges, Julio Cortázar y Ernesto Sabato. La literatura argentina es rica en narrativa, poesía y ensayos que exploran temas profundos y filosóficos.<br>En el ámbito de las artes visuales, Argentina ha sido el hogar de una serie de artistas influyentes. Nombres como Antonio Berni y Xul Solar son reconocidos en todo el mundo. Buenos Aires, la capital, alberga numerosos museos y galerías de arte que exhiben obras tanto de artistas locales como internacionales.<br>La música en Argentina es igualmente diversa y apasionante. Además del tango, el folclore argentino y el rock argentino tienen un lugar destacado en la escena musical del país. La música clásica también tiene una presencia notable, con músicos y compositores de renombre que han dejado su huella en la historia de la música clásica.<br>En el ámbito gastronómico, la comida argentina es famosa por sus asados (parrilladas), empanadas y el mate, una infusión de hierbas característica. Además, Argentina es conocida por su producción de vinos de alta calidad, especialmente en las regiones de Mendoza y Salta.
+
+   </div>
+
+      <div class="mexicosidecards">
+        <div class="card">
+          <div class="content" onclick="OnClick()" >
+                <h2>Dubai</h2>
+                <h3>United Arab Emirates</h3>  
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="content" onclick="OnClick()" >
+              <h2>Dubai</h2>
+              <h3>United Arab Emirates</h3>  
+        </div>
+    </div>
+
+    <div class="card">
+          <div class="content" onclick="OnClick()" >
+                <h2>Dubai</h2>
+                <h3>United Arab Emirates</h3>  
+          </div>
+          
+      </div>
+    
+      <script>
+          function OnClick(){
+              window.open('https://www.spendlifetraveling.com/facts-about-dubai/', '_blank');
+          }
+      </script>
+      </div>
+</div></div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
