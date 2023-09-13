@@ -6,3 +6,9 @@ body{
     background-color: #0D1B2A;
 }
 
+.portada{
+    background-color: aqua;
+}
+.portada, .prehistoria, .mesopotamia{
+    height: 900px;
+}
