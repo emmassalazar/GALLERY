@@ -57,8 +57,7 @@ gap: 10px;
     height: 300px;
     width: 300px;
      padding: 20px;
-    color: white;
-    background-image: url("https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80");
+    color: white; 
     background-size: cover;
     cursor: pointer;
 }
