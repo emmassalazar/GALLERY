@@ -13,9 +13,13 @@ body{
 }
 
 /*header*/
-.header{
+header{
     height: 100px;
     background-color: #415A77;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .logo{
     position: relative;
@@ -145,8 +149,23 @@ max-width: 100%;
 /*BLOQUE 5*/
 .bloque5{
     background-color: #EBECE9;
-    height: 600px;
-    }
+    height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+  }
+
+  .image-container {
+      text-align: center;
+  }
+
+  .image-container img {
+      max-width: 100%;
+      height: auto;
+  }
+
 
 
 /*BLOQUE 6*/
@@ -166,12 +185,7 @@ align-items: center;
 
 /*FOOTER*/
 footer{
-height: 200px;
-margin-top: 100px;
-}
-.creditos{
-    position:absolute;
-    text-align: center;
+height: 400px;
 }
 
 
