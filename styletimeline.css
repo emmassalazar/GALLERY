@@ -10,4 +10,49 @@ body{
     flex-wrap: wrap;
 }
 
+card{
+    width: 800px;
+    height: 500px;
+     padding: 20px;
+    color: #EBECE9; 
+    background-size: cover;
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#EBECE9;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.content *{
+    transform: translateY(-70%);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.content h2{
+    font-size: 35px;
+    margin: 15px;
+    font-weight: 700;
+}
+
+.content h3{
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+.card:hover .content{
+    opacity: 1;
+}
+
+.card:hover .content *{
+    opacity: 1;
+    transform: translateY(0);
+}
 
