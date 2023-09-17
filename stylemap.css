@@ -7,36 +7,32 @@
     flex-wrap: wrap;
     gap:10px;
     margin: 50px;
-    background-color: #0d1b2a;
     justify-content: center;
     align-items: center;
 
 }
 .maptext{
-    font-size: 35px;
+    font-size: 20px;
     position: relative;
     float: right;
     flex: 1;
-  
-    background-color: #0d1b2a;
-    color: #EBECE9;
 }
 
 
 
-.mainmexico, .mainarg{
+.main{
     position:relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;  
 }
 
-.mexicotexto, .argtexto{
+.texto{
 text-align: justify;
     flex: 1;
 }
 
-.mexicosidecards, .argsidecards{
+.sidecards{
 margin: 50px;
 position: relative;
 justify-content: right;
@@ -48,6 +44,21 @@ gap: 10px;
 }
 
 
+/* Styles for small screens (e.g., mobile phones) */
+@media (max-width: 768px) {
+    .main{
+        flex-direction: column;
+       
+    }
+    .sidecards{
+        flex-direction: row;
+    }
+}
+
+/* Styles for extra-small screens (e.g., very small mobile phones) */
+@media (max-width: 480px) {
+    /* Add your extra-small screen styles here */
+}
 
 
 
