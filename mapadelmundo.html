@@ -32,9 +32,13 @@
   <div class="maptext">Bienvenido a nuestro mapa interactivo de América Latina.<br> Haga clic en el país que desee explorar para acceder a información cultural y artística relacionada con el.</div>
 </section>
 
-<div class="sticky">
-  <a href="#mapa">Click para volver al mapa</a>
-</div>
+<button
+  type="button"
+  class="btn btn-dark btn-floating btn-lg"
+  id="btn-back-to-top"
+  >Volver al Mapa
+<i class="fas fa-arrow-up"></i>
+</button>
 
 <div id="argentina"> 
   <div class=" main">
@@ -418,5 +422,32 @@ En resumen, la cultura de Venezuela es una expresión diversa y en constante evo
     </div></div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script>
+      //Get the button
+    let mybutton = document.getElementById("btn-back-to-top");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+    
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", backToTop);
+    
+    function backToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 </body>
 </html>
