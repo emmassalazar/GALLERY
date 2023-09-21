@@ -85,9 +85,10 @@ header{
     width: 500px;
     height:300px;
     float:left;
-    border:1px solid #000;
     margin:50px;
     position:absolute;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .bloque2{
@@ -103,15 +104,16 @@ header{
     height:200px;
     text-align: center;
     top:50%; right:20%;transform: translate(-50%, -50%); position:absolute;
+    
 
 }
 .imgbloque2{
     width: 500px;
     height:300px;
     float:right;
-    border:1px solid #000;
     margin:50px;
     position:absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn{
