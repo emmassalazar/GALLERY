@@ -175,7 +175,11 @@ max-width: 100%;
 .bloque4{
     background-color: #0D1B2A;
     height: 200px;
+    position: relative;
     }
+.textobloque4{
+  top:50%; left:50%;transform: translate(-50%, -50%); position:absolute;
+}
 
 
 /*BLOQUE 5*/
