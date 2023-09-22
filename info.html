@@ -16,6 +16,15 @@
 
 <main>
 <h6 style="color:#415A77">Un poco más sobre el arte</h6>
+
+<button
+  type="button"
+  class="btn btn-light btn-floating btn-lg"
+  id="btn-back-to-top"
+  ><img src="./imagenes/arrow-pointing-to-up.svg" width="50px" height="50px">
+<i class="fas fa-arrow-up"></i>
+</button>
+
   <img src="https://artsandyou.net/wp-content/uploads/2022/10/Material-de-bellas-artes-dibujo.jpg">
   <h1>¿QUÉ ES EL ARTE?</h1>
   <p>
@@ -97,28 +106,26 @@ Hoy en día el arte está al alcance de todo el mundo, y esto de una forma u otr
 
   La pintura trasciende las barreras del tiempo y la distancia, conectando a las personas a lo largo de la historia y el mundo. Es una ventana a la creatividad humana y una fuente inagotable de inspiración. La pintura nos recuerda la importancia de la belleza, la expresión y la exploración de la condición humana, y sigue siendo una forma de arte poderosa y relevante en el siglo XXI.</p>
 
-
+<img src="https://blog.artsper.com/wp-content/uploads/2013/09/louise-bourgeois-maman-644x430.jpg">
 <h3>ESCULTURA</h3>
-<h6></h6>
-<p></p>
-<p></p>
-
+<h6>La escultura, una manifestación artística tridimensional que se despliega en el espacio, es una disciplina que ha dejado su huella en la historia de la humanidad. Esta forma de arte implica la creación de formas y figuras a partir de diversos materiales, desde piedra y mármol hasta metal y madera, y ha servido como un medio poderoso para expresar ideas, emociones y la naturaleza humana.</h6>
+<p>La escultura, en su esencia, es la materialización de la creatividad humana en tres dimensiones. A través de la selección de materiales, la talla y el modelado, los artistas esculpen figuras que pueden ser realistas, abstractas o estilizadas. La escultura no se limita a la representación de formas físicas; también puede transmitir conceptos abstractos y emociones a través de su forma, textura y composición.</p>
+<p>La historia de la escultura es un viaje a través de las eras y las civilizaciones, desde la antigüedad hasta la actualidad:</p>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>Antigüedad: Las civilizaciones egipcia, griega y romana crearon esculturas icónicas que celebraban la belleza humana y representaban a sus dioses y héroes en materiales como el mármol y el bronce. La Victoria de Samotracia y la Venus de Milo son ejemplos notables.</li>
+  <li>Edad Media y Renacimiento: En la Edad Media, la escultura estaba vinculada principalmente a la arquitectura de las catedrales góticas, con detalles ornamentales y figuras religiosas. El Renacimiento italiano revivió el interés por la escultura independiente con figuras como Donatello y Miguel Ángel.</li>
+  <li>Barroco y Rococó: El Barroco produjo obras dramáticas y emotivas, como el Éxtasis de Santa Teresa de Bernini, mientras que el Rococó se caracterizó por su ornamentación y gracia en esculturas decorativas.</li>
+  <li>Escultura Moderna y Contemporánea: El siglo XX vio la aparición de movimientos como el cubismo, el expresionismo y el arte conceptual, con artistas como Constantin Brancusi y Henry Moore, quienes exploraron nuevas formas y materiales.</li>
 </ul>
 
-<p></p>
+<p>La escultura ha sido moldeada por mentes creativas a lo largo de la historia. Algunos escultores y sus obras influyentes incluyen:</p>
 <ul>
-  <li><li>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>Auguste Rodin: Conocido por "El Pensador" y "El Beso", Rodin revolucionó la escultura moderna al capturar la expresión y la emoción en el mármol y el bronce.<li>
+  <li>Isamu Noguchi: Este escultor y diseñador influyó en la escultura contemporánea con su enfoque en la fusión de la escultura y la arquitectura en obras como el "Jardín de la Paz" en Hiroshima.</li>
+  <li>Barbara Hepworth: Hepworth fue una figura destacada en la escultura abstracta, creando formas orgánicas y abstractas en obras como "Oval Sculpture".</li>
+  <li>Louise Bourgeois: Su escultura exploró temas de la psicología y la sexualidad a través de obras como "Maman", una gran araña de bronce.</li>
 </ul>
-
-<p></p>
+<p>La escultura, como manifestación artística tridimensional, tiene un impacto único en el espectador y en el entorno circundante. La escultura puede crear una experiencia inmersiva, permitiendo a las personas interactuar físicamente con la obra. Además, a menudo se integra con la arquitectura y el paisaje urbano, mejorando y dando significado a los espacios públicos y privados.<br><br>La escultura también es una forma de arte que permite la expresión de ideas complejas, emociones y narrativas a través de la combinación de forma, textura y espacio. Su capacidad para desafiar las convenciones estéticas y sociales la convierte en un medio poderoso para la crítica social y la exploración conceptual.<br><br>En resumen, la escultura es una forma de arte trascendental que ha evolucionado a lo largo de la historia y sigue siendo relevante en el arte contemporáneo. Su capacidad para dar forma y vida a la tercera dimensión y transmitir profundidad emocional y conceptual la convierte en una disciplina artística inestimable en la rica tapestry del mundo del arte.</p>
 
 
 <h3>MÚSICA</h3>
@@ -410,7 +417,7 @@ Hoy en día el arte está al alcance de todo el mundo, y esto de una forma u otr
 
 
 
-<h1>¿POR QUÉ IMPORTA EL ARTE?</h1>
+<h1>¿POR QUÉ HACER ARTE?</h1>
 <p>
 
 </p>
@@ -422,7 +429,34 @@ Hoy en día el arte está al alcance de todo el mundo, y esto de una forma u otr
 
 </aside>
 
-     
+    
+<script>
+  //Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
