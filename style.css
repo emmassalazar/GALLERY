@@ -2,7 +2,11 @@
     padding:5px;
     margin:5px;
     font-size: 100%;
-    color: #0C1926;
+    color:#000;
+    font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Quattrocento', serif;
+font-family: 'Quattrocento Sans', sans-serif;
 }
    
 
@@ -117,9 +121,13 @@ header{
 }
 
 .btn{
-  background-color: #415A77;
+  background-color: #0D1B2A;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.8;
+  transition: 0.3s;
 }
 
+.btn:hover {opacity: 2}
 
 /*Bloque 3*/
 .bloque3{
