@@ -33,7 +33,7 @@ header{
   align-items: center;
   width: 100%;
 }
-.logo{
+header .logo{
     position: relative;
     flex: 1;
     margin-top: -5px;
