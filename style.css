@@ -37,24 +37,40 @@ html::-webkit-scrollbar-thumb{
   background:var(--black);
 }
 
+.bloque0{
+  width: 100%;
+
+}
+
 /* PRIMEROS 2 BLOQUES*/
-.bloque1{
+.bloque1, .bloque2{
     background-color:#E1E3DE;
     height: 400px;
     position:relative;
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    display: block;
 }
-.bloque1 .textobloque1{
+.bloque2{
+  position:relative;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap-reverse;
+}
+
+.bloque1 .textobloque1, .bloque2 .textobloque2{
     width: 700px;
     height:200px;
     text-align: center;
     top:50%; left:60%;transform: translate(-50%, -50%); position:absolute;
     padding: 10px;
+    margin: 20px;
 }
-.bloque1 .imgbloque1{
+.textobloque2{
+  top:50%; right:20%;transform: translate(-50%, -50%); position:absolute;
+  
+}
+
+.bloque1 .imgbloque1, .bloque2 .imgbloque2{
     width: 500px;
     height:300px;
     float:left;
@@ -63,30 +79,9 @@ html::-webkit-scrollbar-thumb{
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.bloque2{
-    background-color:#E1E3DE;
-    height: 400px;
-    position:relative;
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap-reverse;
-}
-.textobloque2{
-    width: 700px;
-    height:200px;
-    text-align: center;
-    top:50%; right:20%;transform: translate(-50%, -50%); position:absolute;
-    
-
-}
 .imgbloque2{
-    width: 500px;
-    height:300px;
     float:right;
     margin:50px;
-    position:absolute;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn{
@@ -222,6 +217,23 @@ width: 100%;
   html{
     font-size: 55%;
   }
+  .bloque1{
+    height: 600px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.bloque1 .textobloque1{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20rem;
+    position: relative;
+}
+.bloque1 .imgbloque1{
+    width: 100%;
+}
 }
 
 @media (max-width:768px){
@@ -231,6 +243,8 @@ width: 100%;
   body{
     padding-bottom: 6rem;
   }
+
+  
 }
 
 @media (max-width:450px){
