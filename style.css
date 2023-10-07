@@ -37,18 +37,35 @@ html::-webkit-scrollbar-thumb{
   background:var(--black);
 }
 
+.boton{
+  margin-top: 1rem;
+  padding: .9rem 3rem;
+  border-radius:.5rem;
+  color: #fff;
+  background: var(--maincolor);
+  font-size: 1.7rem;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+}
+.boton:hover{
+  background: var(--dark-color);
+}
+
 .bloque0{
   width: 100%;
 
 }
 
+body{
+  background:var(--light-color);
+}
 /* PRIMEROS 2 BLOQUES*/
 .bloque1, .bloque2{
     background-color:#E1E3DE;
     height: 400px;
     position:relative;
 
-    display: block;
 }
 .bloque2{
   position:relative;
@@ -57,17 +74,21 @@ html::-webkit-scrollbar-thumb{
   flex-wrap: wrap-reverse;
 }
 
-.bloque1 .textobloque1, .bloque2 .textobloque2{
+.bloque1 .textobloque1{
     width: 700px;
     height:200px;
-    text-align: center;
+    text-align: left;
     top:50%; left:60%;transform: translate(-50%, -50%); position:absolute;
     padding: 10px;
     margin: 20px;
 }
-.textobloque2{
+.bloque2 .textobloque2{
   top:50%; right:20%;transform: translate(-50%, -50%); position:absolute;
-  
+  width: 700px;
+    height:200px;
+    text-align: right;
+    padding: 10px;
+    margin: 20px;
 }
 
 .bloque1 .imgbloque1, .bloque2 .imgbloque2{
@@ -85,13 +106,16 @@ html::-webkit-scrollbar-thumb{
 }
 
 .btn{
-  background-color: #0D1B2A;
+  background-color: #415A77;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  opacity: 0.8;
-  transition: 0.3s;
-}
 
-.btn:hover {opacity: 2}
+  transition: 0.3s;
+
+  color:#EBECE9; width: 300px;
+}
+.btn:hover {
+background-color: #0D1B2A;
+}
 
 /*Bloque 3*/
 .bloque3{
@@ -102,7 +126,7 @@ max-width: 100%;
   .cards-grid {
     display: flex;
     justify-content: center;
-    grid-gap: 10px;
+    grid-gap: 40px;
     padding-bottom: 60px;
   }
   /* FLIP CARD */
@@ -181,14 +205,19 @@ max-width: 100%;
 /*BLOQUE 6*/
 .bloque6{
 background-color:#415A77;
- height: 600px;
+ height: 500px;
 }
-.cards{
+.bloque6 .cards{
      display: flex;
     justify-content: space-evenly;
-align-items: center;
+align-items: end;
     gap: 80px;
-    padding: 10px;}
+}
+.bloque6 .cards .card{
+  height: 400px;
+  padding: 10px;
+  margin: 3rem;
+}
 
 
     
@@ -215,24 +244,25 @@ width: 100%;
 /*MEDIA QUERIES*/
 @media (max-width:991px){
   html{
-    font-size: 55%;
+    font-size: 65%;
   }
-  .bloque1{
+  .bloque1, .bloque2{
     height: 600px;
 
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
-.bloque1 .textobloque1{
+.bloque1 .textobloque1, .bloque2 .textobloque2{
     width: 100%;
     text-align: center;
     padding: 10px;
     margin-top: 20rem;
-    position: relative;
+
 }
-.bloque1 .imgbloque1{
-    width: 100%;
+.bloque1 .imgbloque1, .bloque2 .imgbloque2{
+width: 100%;
+margin: 0%;
 }
 }
 
