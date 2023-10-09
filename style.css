@@ -5,7 +5,8 @@
   --maincolor:#415a77;
   --dark-color:#1b263b;
   --black:#0d1b2a;
-  --light-color:#ebece9; 
+  --light-color:#ebece9;
+  --bright-color:#ccb208;
   --border: .1rem solid var(--black);
   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
@@ -49,7 +50,7 @@ html::-webkit-scrollbar-thumb{
   text-decoration: none;
 }
 .boton:hover{
-  background: var(--dark-color);
+  background: var(--bright-color);
 }
 
 .bloque0{
