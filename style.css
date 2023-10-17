@@ -1,5 +1,5 @@
 /*CONFIGURACIONES GENERALES*/
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,200;1,300&family=Roboto:ital,wght@0,300;0,500;1,300&display=swap');
+
 
 :root{
   --maincolor:#415a77;
@@ -12,13 +12,12 @@
 }
 
 *{
-  font-family: 'Nunito', sans-serif;
+  font-family: '';
 
  margin: 0%; padding: 0%;
  box-sizing: border-box;
  outline: none;border: none;
- text-transform: capitalize;
- transition: all .2s linear; transition: width none;
+ transition: all .1s linear; transition: width none;
 }
 
 html{
@@ -38,7 +37,7 @@ html::-webkit-scrollbar-thumb{
   background:var(--black);
 }
 
-.boton{
+.btn{
   margin-top: 1rem;
   padding: .9rem 3rem;
   border-radius:.5rem;
@@ -49,157 +48,166 @@ html::-webkit-scrollbar-thumb{
   font-weight: 500;
   text-decoration: none;
 }
-.boton:hover{
+.btn:hover{
   background: var(--bright-color);
 }
 
 .bloque0{
   width: 100%;
-
 }
 
 body{
   background:var(--light-color);
 }
-/* PRIMEROS 2 BLOQUES*/
-.bloque1, .bloque2{
-    background-color:#E1E3DE;
-    height: 400px;
-    position:relative;
 
-}
-.bloque2{
+/* PRIMEROS 2 BLOQUES*/
+main .bloque1, main .bloque2{
+  height: 400px;
   position:relative;
   display: flex;
+  background: var(--light-color);
+
+}
+main .bloque1{
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+main .bloque2{
   flex-direction: column-reverse;
   flex-wrap: wrap-reverse;
 }
-
-.bloque1 .textobloque1{
-    width: 700px;
-    height:200px;
-    text-align: left;
-    top:50%; left:60%;transform: translate(-50%, -50%); position:absolute;
-    padding: 10px;
-    margin: 20px;
-}
-.bloque2 .textobloque2{
-  top:50%; right:20%;transform: translate(-50%, -50%); position:absolute;
+main .bloque1 .textobloque1, main .bloque2 .textobloque2{
   width: 700px;
-    height:200px;
-    text-align: right;
-    padding: 10px;
-    margin: 20px;
+  height:200px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  top:50%;transform: translate(-50%, -50%); position:absolute;
+}
+main .bloque1 .textobloque1{
+  left:70%;
+}
+main .bloque2 .textobloque2 {
+  right:20%;
 }
 
-.bloque1 .imgbloque1, .bloque2 .imgbloque2{
-    width: 500px;
-    height:300px;
-    float:left;
-    margin:50px;
-    position:absolute;
+main .bloque1 .imgbloque1, main .bloque2 .imgbloque2{
+  width: 500px;
+  height:300px;
+  float:left;
+  margin:50px;
+  position:absolute;
 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.imgbloque2{
-    float:right;
-    margin:50px;
-}
-
-.btn{
-  background-color: #415A77;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-  transition: 0.3s;
-
-  color:#EBECE9; width: 300px;
 }
-.btn:hover {
-background-color: #0D1B2A;
+main .bloque1 .imgbloque1{
+  float:left;
+}
+main .bloque2 .imgbloque2{
+  float:right;
+
+}
+main .bloque1 .boton, main .bloque2 .boton{
+  margin-top: 1rem;
+  padding: .9rem 3rem;
+  border-radius:.5rem;
+  color: #fff;
+  background: var(--maincolor);
+  font-size: 1.7rem;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+}
+main .bloque1 .boton:hover, main .bloque2 .boton:hover {
+background:var(--bright-color);
 }
 
 /*Bloque 3*/
 .bloque3{
-background-color: #415A77;
-height: 1200px;
-max-width: 100%;
+  background-color: #415A77;
+  height: fit-content;
+  max-width: 100%;
+  padding:3rem;
 }
-  .cards-grid {
-    display: flex;
-    justify-content: center;
-    grid-gap: 40px;
-    padding-bottom: 60px;
-  }
-  /* FLIP CARD */
-  .flip-card {
-    width: 320px;
-    height: 504px;
-    perspective: 2000px;
-  }
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 28px;
-    transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
-    transform-style: preserve-3d;
-  }
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 28px;
-    backface-visibility: hidden;
-  }
-  .flip-card-front {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .flip-card-back {
-    font-size: 1.25rem;
-    text-align: center;
-    display: grid;
-    place-items: center;
-    padding: 32px;
-    background-color: #EBECE9;
-    transform: rotateY(180deg);
-  }
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(-180deg);
-  }
+.bloque3 .cards-grid {
+  display: flex;
+  justify-content: center;
+  grid-gap: 40px;
+  padding-bottom: 60px;
+}
+.bloque3 .cards-grid .flip-card {
+  width: 320px;
+  height: 504px;
+  perspective: 2000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 28px;
+  transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
+  transform-style: preserve-3d;
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 28px;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flip-card-back {
+  font-size: 1.25rem;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  background-color: #EBECE9;
+  transform: rotateY(180deg);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(-180deg);
+}
 
-  /*BLOQUE 4*/
+/*BLOQUE 4*/
 .bloque4{
-    background-color: #0D1B2A;
-    height: 200px;
-    position: relative;
-    }
+  background-color: #0D1B2A;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  font-size: 30px; 
+}
 .textobloque4{
   top:50%; left:50%;transform: translate(-50%, -50%); position:absolute;
+  color: #EBECE9; 
+  width: 100%;
 }
-
 
 /*BLOQUE 5*/
 .bloque5{
-    background-color: #E1E3DE;
-    height: 500px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-  }
-
-  .image-container {
-      text-align: center;
-  }
-
-  .image-container img {
+  background-color: #E1E3DE;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bloque5 .image-container {
+  text-align: center;
+}
+.bloque5 .image-container img {
       max-width: 100%;
       height: auto;
-  }
+}
+.bloque5 .image-container p{
+  width: 1000px;
+
+
+}
 
 
 
