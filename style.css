@@ -239,8 +239,8 @@ main .bloque6 .all-cards .card{
   height: 40rem;
 }  
 main .bloque6 .all-cards .card img{
-width: 18rem;
-height: 18rem;
+width: 15rem;
+height: 15rem;
 padding:.5rem;
 }
 main .bloque6 .all-cards .card .card-body .btn{
@@ -291,17 +291,22 @@ width: 100%;
   }
   main .bloque1 .textobloque1, main .bloque2 .textobloque2{
     width: 100%;
-
-    margin-top: 10rem;
+    margin-top: 15rem;
     justify-content: center;
     align-items: center;
     text-align: justify;
+    left:50%;
+
   }
   main .bloque1 .imgbloque1, main .bloque2 .imgbloque2{
     width: 100%;
     margin: 0%;
     padding:3rem;
   }
+
+  main .bloque6 .all-cards{
+
+
 
 }
 
@@ -313,6 +318,10 @@ width: 100%;
     padding-bottom: 6rem;
   }
 
+  main .bloque5 {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   
 }
 
