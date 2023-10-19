@@ -6,7 +6,6 @@
     <title>GALLERY</title>
     <link rel="icon" href="imagenes/dibujo hola.svg" type="image/icon type">
     <link rel="STYLESHEET" href="style.css">
-    <link rel="STYLESHEET" href="stylemap.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
 </head>
@@ -420,32 +419,6 @@ En resumen, la cultura de Venezuela es una expresión diversa y en constante evo
     </div></div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-<script>
-      //Get the button
-    let mybutton = document.getElementById("btn-back-to-top");
-    
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () {
-      scrollFunction();
-    };
-    
-    function scrollFunction() {
-      if (
-        document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20
-      ) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    // When the user clicks on the button, scroll to the top of the document
-    mybutton.addEventListener("click", backToTop);
-    
-    function backToTop() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-    </script>
+<script src="back_to_top.js"></script>
 </body>
 </html>

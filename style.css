@@ -277,6 +277,8 @@ main .bloque6 .all-cards .card .card-body .btn:hover{
   right: 20px;
   display: none;
   z-index: 1000;
+
+  border-radius: 100%;
 }
 
 
@@ -335,8 +337,6 @@ main .bloque6 .all-cards .card .card-body .btn:hover{
     flex-direction: row;
     flex-wrap: wrap;
   }
-
-
   
 }
 @media (max-width:593px){
@@ -348,6 +348,115 @@ main .bloque6 .all-cards .card .card-body .btn:hover{
   html{
     font-size: 50%;
   }
+}
+
+/* style map */
+
+.mapa{
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:10px;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+
+}
+.maptext{
+  font-size: 20px;
+  position: relative;
+  float: right;
+  flex: 1;
+}
 
 
+
+.main{
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+
+}
+
+.texto{
+text-align: justify;
+  flex: 1;
+  padding: 2rem;
+}
+
+h1{
+  text-align: center;
+
+}
+
+.sidecards{
+margin: 4rem;
+position: relative;
+justify-content: right;
+
+display: flex;
+flex-direction: column;
+gap: 10px;
+
+}
+
+
+@media (max-width: 768px) {
+  .main{
+      flex-direction: column;
+     width: 100%;
+  }
+  .texto{
+      text-align: left;
+      font-size:1.5rem;
+  }
+ 
+}
+
+.card{
+  height: 300px;
+  width: 300px;
+   padding: 20px;
+  color: white; 
+  background-size: cover;
+  cursor: pointer;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#EBECE9;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.content *{
+  transform: translateY(-70%);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.content h2{
+  font-size: 35px;
+  margin: 15px;
+  font-weight: 700;
+}
+
+.content h3{
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.card:hover .content{
+  opacity: 1;
+}
+
+.card:hover .content *{
+  opacity: 1;
+  transform: translateY(0);
 }
