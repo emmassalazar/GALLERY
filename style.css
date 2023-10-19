@@ -304,9 +304,18 @@ width: 100%;
     padding:3rem;
   }
 
+  main .bloque6{
+    height: 1000px;
+  }
   main .bloque6 .all-cards{
+    flex-direction: row;
+    flex-wrap: wrap;
 
+    justify-content: center;
+    align-items: center;
 
+    height: fit-content;
+  }
 
 }
 
@@ -322,11 +331,19 @@ width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+
   
 }
-
+@media (max-width:593px){
+  main .bloque6 {
+    height:2050px;
+  } 
+}
 @media (max-width:450px){
   html{
     font-size: 50%;
   }
+
+
 }
