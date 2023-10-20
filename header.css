@@ -28,6 +28,8 @@ header .navbar a{
 
   text-decoration: none;
 
+
+
 }
 header .navbar a:hover{
   color:var(--bright-color);
@@ -43,80 +45,3 @@ header .icons a{
 header .icons a:hover{
   color:var(--bright-color);
 }
-
-/* <!--HEADER INICIA
-<header class="header">
- <div class="header-1">
-     <a href="main.html" class="logo"><img src="imagenes/dibujo hola.svg" width="30px"></a>
-     
-     <form action="" class="search-form">
-         <input type="search" name="" id="search-box" placeholder="Buscar...">
-         <label for="search-box" class="fas fa-search"></label>
-     </form>
-
-     <div class="icons">
-         <div id="search-btn" class="fas fa-search"></div>
-         <a href="#" class="fas fa-heart"></a>
-         <a href="#" class="fas fa-cart-shopping"></a>
-         <div id="login-btn" class="fas fa-user"></div>
-     </div>
- </div>
-
-
- <div class="header-2">
-     <nav class="navbar">
-         <a href="main.html">Inicio</a>
-         <a href="#">Explorar</a>
-         <a href="#">Ingresos Recientes</a>
-         <a href="#">Populares</a>
-     </nav>
- </div>
-
-</header>
-
-<nav class="bottom-navbar">
- <a href="" class="fas fa-home"></a>
- <a href="" class="fas fa-list"></a>
- <a href="" class="fas fa-tags"></a>
-</nav>
-
-
-
-<div class="login-form-container">
- <div id="close-login-btn" class="fas fa-times"></div>
- <form action="">
-     <h3>Ingresar</h3>
-     <span>Nombre</span>
-     <input type="text" name="" class="box" placeholder="Ingrese su nombre" id="" autocomplete="off">
-     <span>Contraseña</span>
-     <input type="password" name="" class="box" placeholder="Ingrese su contraseña" id="" autocomplete="off">
-     <div class="checkbox">
-         <input type="checkbox" name="" id="recuerdame">
-         <label for="recuerdame">Recuérdame</label>
-     </div>
-     <input type="submit" value="Ingresar" class="boton btn">
-     <p>¿Olvidó su contraseña? <a href="#">Click Aquí</a></p>
-     <p>¿No tiene cuenta? <a href="#">Regístrese Aquí</a></p>
- </form>
-</div>
-LOG IN TERMINA-->
-<!--HEADER
-<header>
-   <a href="main.html"><img src="imagenes/dibujo hola.svg" width="50px" class="logo"></a>
- <div class="title" style="font-size:60px; color:#000; ">GALLERY</div>
-
- <div class="btn-group">
-   <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-     Menú
-   </button>
-   <ul class="dropdown-menu">
-     <li><a href="main.html"><button class="dropdown-item" type="button">Página Principal</button></a></li>
-     <li><a href="info.html"><button class="dropdown-item" type="button">¿Qué es el Arte?</button></a></li>
-     <li><a href="info.html#formasdearte"><button class="dropdown-item" type="button">Formas de Arte</button></a></li>
-     <li><a href="lineadetiempo.html"><button class="dropdown-item" type="button">Etapas del Arte</button></a></li>
-     <li><a href="mapa.html"><button class="dropdown-item" type="button">Arte de Latinoamérica</button></a></li>
-   </ul>
- </div>
-</header>-->
-
-<!-- header inicia --> */

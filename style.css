@@ -88,7 +88,7 @@ main .bloque1 .textobloque1{
   left:70%;
 }
 main .bloque2 .textobloque2 {
-  right:20%;
+  right:30%;
 }
 
 main .bloque1 .imgbloque1, main .bloque2 .imgbloque2{
@@ -205,7 +205,7 @@ main .bloque4 .textobloque4{
 }
 .bloque5 .contenedor {
   text-align: center;
-  padding:1rem;
+  padding:4rem;
 }
 .bloque5 img {
   max-width: 80%;
@@ -224,7 +224,7 @@ main .bloque4 .textobloque4{
 /*BLOQUE 6*/
 main .bloque6{
 background-color:#415A77;
- height: 500px;
+  height: 500px;
 }
 main .bloque6 .all-cards{
   display: flex;
@@ -362,14 +362,26 @@ main .bloque6 .all-cards .card .card-body .btn:hover{
   justify-content: center;
   align-items: center;
 
+
+
 }
 .maptext{
   font-size: 20px;
   position: relative;
   float: right;
   flex: 1;
-}
+  padding: 2rem;
 
+}
+svg{
+  background-color: #fff;
+}
+path{
+  fill: #959595;
+}
+path:hover{
+  fill: #415a77;
+}
 
 
 .main{
