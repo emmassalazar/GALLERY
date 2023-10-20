@@ -52,6 +52,51 @@ html::-webkit-scrollbar-thumb{
   background: var(--bright-color);
 }
 
+header{
+  position: fixed;
+  top: 0;left: 0; right:0;
+  background: #fff;
+  padding: 2rem 9%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+
+}
+
+header .logo{
+  font-size: 3rem;
+  color:var(--dark-color);
+  font-weight: bolder;
+
+  text-decoration: none;
+}
+header .logo img{
+  width: 4rem;
+}
+header .navbar a{
+  font-size: 1.5rem;
+  padding:0 1.5rem;
+  color:var(--dark-color);
+
+  text-decoration: none;
+}
+header .navbar a:hover{
+  color:var(--bright-color);
+}
+header .icons a{
+  font-size: 2.5rem;
+  color:var(--dark-color);
+  margin-left:1.5rem;
+
+  text-decoration: none;
+
+}
+header .icons a:hover{
+  color:var(--bright-color);
+}
+
 .bloque0{
   width: 100%;
 }
@@ -395,18 +440,21 @@ path:hover{
 .texto{
 text-align: justify;
   flex: 1;
-  padding: 2rem;
+  padding: 5%;
+  font-size: 1.5rem;
 }
 
-h1{
+.texto h1{
   text-align: center;
-
+  font-size: 300%;
 }
 
 .sidecards{
 margin: 4rem;
 position: relative;
 justify-content: right;
+
+margin-top: 20%;
 
 display: flex;
 flex-direction: column;
