@@ -10,7 +10,7 @@
 }
 
 *{
-  font-family: '';
+    font-family: "Playfair Display", serif;
 
   margin: 0%; padding: 0%;
   box-sizing: border-box;
@@ -97,6 +97,7 @@ header .icons a:hover{
 
 .bloque0{
   width: 100%;
+  margin-top: 10.5rem;
 }
 
 /* PRIMEROS 2 BLOQUES*/
@@ -127,7 +128,7 @@ main .bloque1 .textobloque1{
   left:70%;
 }
 main .bloque2 .textobloque2 {
-  right:30%;
+  right:15%;
 }
 
 main .bloque1 .imgbloque1, main .bloque2 .imgbloque2{
@@ -318,8 +319,8 @@ main .bloque6 .all-cards .card .card-body .btn:hover{
   border-radius: 100%;
 }
 #btn-back-to-top img{
-  width: 5rem;
-  height: 5rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 /* style map */
@@ -332,6 +333,8 @@ main .bloque6 .all-cards .card .card-body .btn:hover{
   margin: 50px;
   justify-content: center;
   align-items: center;
+
+  margin-top: 10rem;
 }
 .maptext{
   font-size: 20px;
@@ -343,7 +346,6 @@ main .bloque6 .all-cards .card .card-body .btn:hover{
 
 }
 .mapa svg{
-  background-color: #fff;
   margin-left: 20%;
 }
 path{
@@ -509,6 +511,11 @@ text-align: justify;
 .texto{
     text-align: left;
     font-size:1.5rem;
+}
+
+header{
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 }
 @media (max-width:593px){

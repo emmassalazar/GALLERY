@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY - Carrito de Compras</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<link rel="icon" href="imagenes/dibujo hola.svg" type="image/icon type">
+<link rel="STYLESHEET" href="style.css">
+
+<!-- <style>
+body{
+    background-color: #f4f4f4;
+}.container{
+    background-color: #fff;
+    padding:2rem;
+    border-radius:.5rem;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+}
+.btn{
+    margin-top: 1rem;
+}
+#resultados{
+    display:none;
+}
+.hotel-card{
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+    padding:1rem;
+    margin: 1rem;
+    width: 30rem;
+    display: inline-block;
+}
+.hotel-card img{
+    max-width: 100%;
+    height: auto;
+}
+.hotel-card p{
+    margin:0;
+}
+
+</style> -->
+</head>
+<body>
+
+<!--     
+    <script>
+        function crearCita(cita,callback){
+            var miCita="como yo siempre digo "+ cita
+            callback(miCita);
+        }
+        
+        function logCita(cita){
+            console.log(cita)
+        }
+        
+        crearCita("someone to watch me die", logCita);
+        
+        </script> -->
+
+<!-- <div class="container">
+    <h1>Buscador de Hoteles</h1>
+
+    <div class="form-group">
+        <label for="ubicacion">ubicacion</label>
+        <input type="text" id="ubicacion" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="cantidad">cantidad de personas</label>
+        <input type="number" id="cantidad" class="form-control">
+    </div>
+    <button class="btn btn-primary" id="buscarBtn">buscar hoteles</button>
+</div>
+<div id="resultados" class="container mt-4">
+</div>
+
+<script>
+const ubicacionInput=document.getElementById('ubicacion');
+const cantidadInput =document.getElementById('cantidad');
+const buscarBtn =document.getElementById('buscarBtn');
+const resultadosDiv =document.getElementById('resultados');
+
+const hoteles = [
+{nombre: 'Hotel 1', ubicacion: 'Ciudad A', capacidad:2, precio:100, imagen: 'hotel1.jpg'},
+{nombre: 'Hotel 2', ubicacion: 'Ciudad A', capacidad:4, precio:200, imagen: 'hotel2.jpg'},
+{nombre: 'Hotel 3', ubicacion: 'Ciudad B', capacidad:3, precio:300, imagen: 'hotel3.jpg'},
+
+
+];
+
+function buscarHoteles(){
+    const ubicacion=ubicacionInput.value.toLowerCase();
+    const cantidadPersonas=parseInt(cantidadInput.value);
+
+    const resultados=hoteles.filter(hotel => {
+        return hotel.ubicacion.toLowerCase().includes(ubicacion) && hotel.capacidad >= cantidadPersonas;
+    });
+    mostrarResultados(resultados);
+}
+
+function mostrarResultados(resultados){
+    resultadosDiv.innerHTML= '';
+    if (resultados.length === 0){
+        resultadosDiv.innerHTML='<p>No se encontraron Hoteles</p>';
+    }else{
+        resultados.forEach(hotel => {
+            resultadosDiv.innerHTML += `
+            <div class="hotel-card">
+                <img src="${hotel.imagen}" alt="{$hotel.nombre}">
+                <p>Nombre: "${hotel.nombre}"</p>
+                <p>Ubicacion: "${hotel.ubicacion}"</p>
+                <p>Precio: "${hotel.precio}"</p>
+                </div>`;
+
+        });
+    }
+    resultadosDiv.style.display='block';
+}
+buscarBtn.addEventListener('click',buscarHoteles);
+</script> -->
+
+<script>
+
+    function suma(n, callback){
+        var rsuma=5+n;
+        callback(rsuma)
+    }
+
+    function multiplicacion(n2){
+        alert("resultado: "+ (n2*2))
+    }
+    suma(6, multiplicacion);
+</script>
+
+<script>
+    var d= new Date(2005, 7, 16);
+    var n= new Date();
+
+    var añoa=d.getFullYear();
+    var añob=n.getFullYear();
+
+    var edad=(añoa-añob);
+    console.log(edad);
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/ecfed6382a.js" crossorigin="anonymous"></script>
+  
+<script src="header.js" defer></script>
+</body>
+</html>

@@ -3,20 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GALLERY \ Carrito de Compras</title>
+    <title>GALLERY - Carrito de Compras</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<link rel="icon" href="imagenes/dibujo hola.svg" type="image/icon type">
+<link rel="STYLESHEET" href="style.css">
+
+<style>
+h1 {
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.product {
+    border: var(--border);
+    padding: 1.5rem;
+    text-align: center;
+
+    margin: 1rem;
+    border-radius: .5rem;
+
+
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+}
+
+.add-to-cart {
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+
+  border-radius:.5rem;
+  background: var(--maincolor);
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+}
+.add-to-cart:hover{
+  background: var(--bright-color);
+}
+
+
+.cart {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    float: right;
+    border-radius: .5rem;
+
+    margin: 1rem;
+
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+}
+
+#cart-total {
+    font-weight: bold;
+}
+
+@media (max-width:991px){
+    body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .cart{
+        width: 100%;
+        margin: 2rem;
+    }
+}
+@media (max-width:768px){
+    .products{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}
+
+</style>
 </head>
 <body>
-    
+    <h1>Carrito de Compras</h1>
+    <div class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+    </div>
+    <div class="products">
+        <div class="product">
+            <img src="item1.jpg" alt="Item 1">
+            <p>Item 1</p>
+            <p>$10.00</p>
+            <button class="add-to-cart" data-price="10.00">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="item2.jpg" alt="Item 2">
+            <p>Item 2</p>
+            <p>$15.00</p>
+            <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="item2.jpg" alt="Item 2">
+            <p>Item 2</p>
+            <p>$15.00</p>
+            <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="item2.jpg" alt="Item 2">
+            <p>Item 2</p>
+            <p>$15.00</p>
+            <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="item2.jpg" alt="Item 2">
+            <p>Item 2</p>
+            <p>$15.00</p>
+            <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="item2.jpg" alt="Item 2">
+            <p>Item 2</p>
+            <p>$15.00</p>
+            <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="item2.jpg" alt="Item 2">
+            <p>Item 2</p>
+            <p>$15.00</p>
+            <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+        </div>
+        
+    </div>
 
-    <script>
-        var d= new Date(2005, 7, 16);
-        var n= new Date();
 
-        var añoa=d.getFullYear();
-        var añob=n.getFullYear();
+<script>
+    // Define variables
+const addToCartButtons = document.querySelectorAll('.add-to-cart');
+const cartItems = document.getElementById('cart-items');
+const cartTotal = document.getElementById('cart-total');
 
-        var edad=(añoa-añob);
-        console.log(edad);
-    </script>
+let total = 0;
+
+// Add event listeners to "Add to Cart" buttons
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const product = button.parentElement;
+        const productName = product.querySelector('p:nth-child(2)').textContent;
+        const productPrice = parseFloat(button.getAttribute('data-price'));
+
+        // Add item to cart
+        const cartItem = document.createElement('li');
+        cartItem.textContent = `${productName} - $${productPrice.toFixed(2)}`;
+        cartItems.appendChild(cartItem);
+
+        // Update total
+        total += productPrice;
+        cartTotal.textContent = total.toFixed(2);
+    });
+});
+
+   
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/ecfed6382a.js" crossorigin="anonymous"></script>
+  
+<script src="header.js" defer></script>
 </body>
 </html>
