@@ -8,239 +8,282 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 <link rel="icon" href="imagenes/dibujo hola.svg" type="image/icon type">
 <link rel="STYLESHEET" href="style.css">
-
-<style>
-h1 {
-    text-align: center;
-}
-
-.container{
-display: flex;
-flex-direction: column;
-flex-wrap: wrap-reverse;
-}
-
-.products {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-
-    float: left;
-}
-
-.product {
-    border: var(--border);
-    padding: 1.5rem;
-    text-align: center;
-
-    margin: 1rem;
-    border-radius: .5rem;
-
-}
-
-.product img {
-    width: 100px;
-    height: 100px;
-}
-
-.add-to-cart {
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-
-  border-radius:.5rem;
-  background: var(--maincolor);
-  font-size: 1rem;
-  cursor: pointer;
-  font-weight: 500;
-  text-decoration: none;
-}
-.add-to-cart:hover{
-  background: var(--bright-color);
-}
+<link rel="STYLESHEET" href="styleCarrito.css">
 
 
-.cart {
-    border: 1px solid #ccc;
-    padding: 20px;
-    width: 300px;
-    float: right;
-    border-radius: .5rem;
-
-    margin: 1rem;
-
-}
-
-#cart-items {
-    list-style-type: none;
-    padding: 0;
-}
-
-#cart-items li {
-    margin-bottom: 10px;
-}
-
-#cart-total {
-    font-weight: bold;
-}
-
-@media (max-width:991px){
-    body{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .cart{
-        width: 100%;
-        margin: 2rem;
-    }
-}
-@media (max-width:768px){
-    .products{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-}
-
-</style>
 </head>
-<body>
-    <h1>Carrito de Compras</h1>
-    <div class="container">
+
+<header id="header">
+    <a href="main.html" class="logo"><img src="imagenes/dibujo hola.svg">GALLERY</a>
+    <nav class="navbar">
+      <a href="main.html">Inicio</a>
+      <a href="mapa.html">Cultura Latina</a>
+      <a href="lineadetiempo.html">Historia del Arte</a>
+      <a href="info.html">Un poco más...</a>
+    </nav>
+    <div class="icons">
+      <a href="carrito.html" class="fas fa-shopping-cart"></a>
+    </div>
+  </header>
+
+<body style="background: #ebece9;">
+<div class="container">
+        <h1>Carrito de Compras</h1>
     <div class="cart">
         <h2>Shopping Cart</h2>
         <ul id="cart-items"></ul>
         <p>Total: $<span id="cart-total">0.00</span></p>
-    </div>
-    <div class="products">
-        <div class="product">
-            <img src="item1.jpg" alt="Item 1">
-            <p>Item 1</p>
-            <p>$10.00</p>
-            <button class="add-to-cart" data-price="10.00">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="item2.jpg" alt="Item 2">
-            <p>Item 2</p>
-            <p>$15.00</p>
-            <button class="add-to-cart" data-price="15.00">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="item2.jpg" alt="Item 2">
-            <p>Item 2</p>
-            <p>$15.00</p>
-            <button class="add-to-cart" data-price="15.00">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="item2.jpg" alt="Item 2">
-            <p>Item 2</p>
-            <p>$15.00</p>
-            <button class="add-to-cart" data-price="15.00">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="item2.jpg" alt="Item 2">
-            <p>Item 2</p>
-            <p>$15.00</p>
-            <button class="add-to-cart" data-price="15.00">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="item2.jpg" alt="Item 2">
-            <p>Item 2</p>
-            <p>$15.00</p>
-            <button class="add-to-cart" data-price="15.00">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="item2.jpg" alt="Item 2">
-            <p>Item 2</p>
-            <p>$15.00</p>
-            <button class="add-to-cart" data-price="15.00">Add to Cart</button>
-        </div>
+
+        <a href="comprar.html" class="btn">Comprar</a>
         
     </div>
+
     <div class="products">
+
         <div class="product">
-            <img src="item1.jpg" alt="Item 1">
-            <p>Item 1</p>
-            <p>$10.00</p>
-            <button class="add-to-cart" data-price="10.00">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="item2.jpg" alt="Item 2">
+            <img src="imagenes\imagenes_carrito\gorra_blanca.jpg" alt="Item 2">
             <p>Item 2</p>
             <p>$15.00</p>
             <button class="add-to-cart" data-price="15.00">Add to Cart</button>
         </div>
+
         <div class="product">
-            <img src="item2.jpg" alt="Item 2">
+            <img src="imagenes\imagenes_carrito\gorra_davinci.jpg" alt="Item 2">
             <p>Item 2</p>
             <p>$15.00</p>
             <button class="add-to-cart" data-price="15.00">Add to Cart</button>
         </div>
+
         <div class="product">
-            <img src="item2.jpg" alt="Item 2">
+            <img src="imagenes\imagenes_carrito\gorra_murakamiwebp.webp" alt="Item 2">
             <p>Item 2</p>
             <p>$15.00</p>
             <button class="add-to-cart" data-price="15.00">Add to Cart</button>
         </div>
+
         <div class="product">
-            <img src="item2.jpg" alt="Item 2">
+            <img src="imagenes\imagenes_carrito\gorra_warhol.webp" alt="Item 2">
             <p>Item 2</p>
             <p>$15.00</p>
             <button class="add-to-cart" data-price="15.00">Add to Cart</button>
         </div>
+
         <div class="product">
-            <img src="item2.jpg" alt="Item 2">
+            <img src="imagenes\imagenes_carrito\gorra_warhol.webp" alt="Item 2">
             <p>Item 2</p>
             <p>$15.00</p>
             <button class="add-to-cart" data-price="15.00">Add to Cart</button>
         </div>
-        <div class="product">
-            <img src="item2.jpg" alt="Item 2">
-            <p>Item 2</p>
-            <p>$15.00</p>
-            <button class="add-to-cart" data-price="15.00">Add to Cart</button>
-        </div>
-        
+
+</div>
+
+<div class="products">
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_blanca.jpg" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_davinci.jpg" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_murakamiwebp.webp" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_warhol.webp" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_warhol.webp" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
     </div>
 
 </div>
 
+<div class="products">
 
-<script>
-    // Define variables
-const addToCartButtons = document.querySelectorAll('.add-to-cart');
-const cartItems = document.getElementById('cart-items');
-const cartTotal = document.getElementById('cart-total');
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_blanca.jpg" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
 
-let total = 0;
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_davinci.jpg" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
 
-// Add event listeners to "Add to Cart" buttons
-addToCartButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const product = button.parentElement;
-        const productName = product.querySelector('p:nth-child(2)').textContent;
-        const productPrice = parseFloat(button.getAttribute('data-price'));
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_murakamiwebp.webp" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
 
-        // Add item to cart
-        const cartItem = document.createElement('li');
-        cartItem.textContent = `${productName} - $${productPrice.toFixed(2)}`;
-        cartItems.appendChild(cartItem);
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_warhol.webp" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
 
-        // Update total
-        total += productPrice;
-        cartTotal.textContent = total.toFixed(2);
-    });
-});
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_warhol.webp" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
 
-   
-</script>
+</div>
 
+<div class="products">
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_blanca.jpg" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_davinci.jpg" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_murakamiwebp.webp" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_warhol.webp" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_warhol.webp" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
+
+</div>
+
+<div class="products">
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_blanca.jpg" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_davinci.jpg" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_murakamiwebp.webp" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_warhol.webp" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_warhol.webp" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
+
+</div>
+
+<div class="products">
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_blanca.jpg" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_davinci.jpg" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_murakamiwebp.webp" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_warhol.webp" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes\imagenes_carrito\gorra_warhol.webp" alt="Item 2">
+        <p>Item 2</p>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-price="15.00">Add to Cart</button>
+    </div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<script src="carrito.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/ecfed6382a.js" crossorigin="anonymous"></script>
-  
-<script src="header.js" defer></script>
+
 </body>
 </html>
