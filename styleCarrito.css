@@ -91,18 +91,7 @@ justify-content: center;
         margin: 2rem;
     }
 }
-@media (max-width:768px){
-    .products{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
 
-    .container{
-        padding: 4rem;
-
-    }
-
-}
 
 
 
