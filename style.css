@@ -35,8 +35,12 @@ html::-webkit-scrollbar-thumb{
   background:var(--black);
 }
 
+body{
+  padding: 1.5rem 9%; 
+}
+
 /* Diseño Botón */
-.btn{
+.btn, main .bloque1 .btn, main .bloque2 .btn{
   margin-top: 1rem;
   padding: .9rem 3rem;
   border-radius:.5rem;
@@ -47,7 +51,7 @@ html::-webkit-scrollbar-thumb{
   font-weight: 500;
   text-decoration: none;
 }
-.btn:hover{
+.btn:hover, main .bloque1 .btn:hover, main .bloque2 .btn:hover{
   background: var(--bright-color);
 }
 
@@ -108,27 +112,31 @@ header .fa-bars{
 .bloque0{
   width: 100%;
 }
-.bloque0 .carousel{
-  height: 80rem;
-}
 
 /* PRIMEROS 2 BLOQUES*/
-main .bloque1, main .bloque2{
-  height: 400px;
+main .bloque1 , main .bloque2{
+  height: 35rem;
   position:relative;
   display: flex;
   background: var(--light-color);
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap:wrap;
+  padding: 2rem 0; padding-bottom: 3rem;
 
 }
 main .bloque1{
   flex-direction: column;
   flex-wrap: wrap;
+  
 }
 main .bloque2{
   flex-direction: column-reverse;
   flex-wrap: wrap-reverse;
 }
-main .bloque1 .textobloque1, main .bloque2 .textobloque2{
+main .bloque1 .texto, main .bloque2 .texto{
   width: 700px;
   height:200px;
   text-align: center;
@@ -139,7 +147,7 @@ main .bloque1 .textobloque1{
   left:70%;
 }
 main .bloque2 .textobloque2 {
-  right:15%;
+  right:20%;
 }
 
 main .bloque1 .imgbloque1, main .bloque2 .imgbloque2{
@@ -148,25 +156,10 @@ main .bloque1 .imgbloque1, main .bloque2 .imgbloque2{
   float:left;
   margin:50px;
   position:absolute;
+  border-radius: .5rem;
 
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
-main .bloque1 .boton, main .bloque2 .boton{
-  margin-top: 1rem;
-  padding: .9rem 3rem;
-  border-radius:.5rem;
-  color: #fff;
-  background: var(--maincolor);
-  font-size: 1.7rem;
-  cursor: pointer;
-  font-weight: 500;
-  text-decoration: none;
-}
-main .bloque1 .boton:hover, main .bloque2 .boton:hover {
-background:var(--bright-color);
-}
 
 /*Bloque 3*/
 /* .bloque3{
@@ -525,6 +518,7 @@ text-align: justify;
     display: block;
     width: 100%;
   }
+
 
 
 /* 
