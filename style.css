@@ -36,11 +36,14 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-  padding: 1.5rem 9%; 
+  padding: 1.5rem 7%;
+  background: var(--light-color);
 }
 
 /* Diseño Botón */
-.btn, main .bloque1 .btn, main .bloque2 .btn{
+.btn, 
+main .bloque1 .btn,
+main .bloque2 .btn{
   margin-top: 1rem;
   padding: .9rem 3rem;
   border-radius:.5rem;
@@ -51,7 +54,9 @@ body{
   font-weight: 500;
   text-decoration: none;
 }
-.btn:hover, main .bloque1 .btn:hover, main .bloque2 .btn:hover{
+.btn:hover, 
+main .bloque1 .btn:hover, 
+main .bloque2 .btn:hover{
   background: var(--bright-color);
 }
 
@@ -69,13 +74,13 @@ header{
   
 }
 header .logo{
-  font-size: 3rem;
+  font-size: 2rem;
   color:var(--dark-color);
   font-weight: bolder;
   text-decoration: none;
 }
 header .logo img{
-  width: 4rem;
+  width: 3rem;
   }
 header .navbar a{
   font-size: 1.5rem;
@@ -108,23 +113,18 @@ header .fa-bars{
   display: none;
 }
 
-/* Home Carousel */
-.bloque0{
+
+.bloque{
   width: 100%;
 }
 
 /* PRIMEROS 2 BLOQUES*/
 main .bloque1 , main .bloque2{
-  height: 35rem;
-  position:relative;
-  display: flex;
-  background: var(--light-color);
-
+  height: 30rem;
   display: flex;
   align-items: center;
-  gap: 2rem;
-  flex-wrap:wrap;
-  padding: 2rem 0; padding-bottom: 3rem;
+  justify-content: center;
+  padding: 7rem;
 
 }
 main .bloque1{
@@ -132,48 +132,27 @@ main .bloque1{
   flex-wrap: wrap;
   
 }
-main .bloque2{
-  flex-direction: column-reverse;
+main .bloque2 {
   flex-wrap: wrap-reverse;
 }
 main .bloque1 .texto, main .bloque2 .texto{
-  width: 700px;
-  height:200px;
   text-align: center;
 
-  top:50%;transform: translate(-50%, -50%); position:absolute;
 }
-main .bloque1 .textobloque1{
-  left:70%;
-}
-main .bloque2 .textobloque2 {
-  right:20%;
-}
-
-main .bloque1 .imgbloque1, main .bloque2 .imgbloque2{
+main .bloque1 img, main .bloque2 img{
   width: 500px;
   height:300px;
-  float:left;
-  margin:50px;
-  position:absolute;
   border-radius: .5rem;
 
 }
 
 
 /*Bloque 3*/
-/* .bloque3{
+.bloque3{
   background-color: #415A77;
-  height: fit-content;
-  max-width: 100%;
   padding:3rem;
 }
-.bloque3 h2{
-  text-align: center;
-  color:var(--light-color);
-  padding:1rem;
-  font-size: 4rem;
-}
+
 .bloque3 .cards-grid {
   display: flex;
   justify-content: center;
@@ -217,10 +196,10 @@ main .bloque1 .imgbloque1, main .bloque2 .imgbloque2{
 }
 .flip-card:hover .flip-card-inner {
   transform: rotateY(-180deg);
-} */
+}
 
 /*BLOQUE 4*/
-/* .bloque4{
+.bloque4{
   background-color: #0D1B2A;
   width: 100%;
   height: 200px;
@@ -235,7 +214,7 @@ main .bloque4 .textobloque4{
 } */
 
 /*BLOQUE 5*/
-/* .bloque5{
+.bloque5{
   background-color: #E1E3DE;
   height: 500px;
   display: flex;
@@ -256,10 +235,10 @@ main .bloque4 .textobloque4{
   width: 1000px;
 
 
-} */
+}
 
 /*BLOQUE 6*/
-/* main .bloque6{
+main .bloque6{
 background-color:#415A77;
   height: 500px;
 }
@@ -293,7 +272,7 @@ main .bloque6 .all-cards .card .card-body .btn{
 }
 main .bloque6 .all-cards .card .card-body .btn:hover{
   background: var(--bright-color);
-} */
+}
 
 /*FOOTER*/
 .footer .credit{
@@ -307,7 +286,7 @@ main .bloque6 .all-cards .card .card-body .btn:hover{
 
 
 /*BACK TO TOP BTN*/
-/* #btn-back-to-top {
+#btn-back-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -322,7 +301,7 @@ main .bloque6 .all-cards .card .card-body .btn:hover{
 } */
 
 /* style map */
-/* .mapa{
+.mapa{
   position:relative;
   display: flex;
   flex-direction: row;
@@ -432,7 +411,7 @@ text-align: justify;
 
 .content {
   padding: 20px;
-} */
+} 
 
 
 
@@ -442,12 +421,12 @@ text-align: justify;
 
 /*MEDIA QUERIES*/
 @media(max-width:1186px){
-  /* .maptext{
+  .maptext{
     margin-right: 0%;
   }
   .mapa svg{
     margin-left: 0%;
-  } */
+  } 
 }
 @media (max-width:991px){
   html{
@@ -478,7 +457,7 @@ text-align: justify;
     padding:3rem;
   }
 
-  /* main .bloque6{
+  main .bloque6{
     height: 1000px;
   }
   main .bloque6 .all-cards{
@@ -489,7 +468,7 @@ text-align: justify;
     align-items: center;
 
     height: fit-content;
-  } */
+  }
 
 }
 @media (max-width:768px){
@@ -521,7 +500,7 @@ text-align: justify;
 
 
 
-/* 
+
   main .bloque5 {
     flex-direction: row;
     flex-wrap: wrap;
@@ -534,7 +513,7 @@ text-align: justify;
 .texto{
     text-align: left;
     font-size:1.5rem;
-} */
+} 
 
 }
 
