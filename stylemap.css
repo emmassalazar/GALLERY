@@ -1,0 +1,127 @@
+.mapa{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:10px;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+  
+    margin-top: 10rem;
+  }
+  .maptext{
+    font-size: 20px;
+    position: relative;
+    float: right;
+    flex: 1;
+    padding: 2rem;
+    margin-right: 20%;
+  
+  }
+  .mapa svg{
+    margin-left: 20%;
+  }
+  path{
+    fill: var(--maincolor);
+  }
+  path:hover{
+    fill: var(--bright-color);
+  }
+  .main{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+  
+  }
+  
+  .texto{
+  text-align: justify;
+    flex: 1;
+    padding: 5%;
+    font-size: 1.5rem;
+  }
+  
+  .texto h1{
+    text-align: center;
+    font-size: 300%;
+  }
+  
+  .sidecards{
+    margin: 4rem;
+    position: relative;
+    justify-content: right;
+  
+    margin-top: 20%;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .card{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    background-size:cover;
+    cursor: pointer;
+  }
+  
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--dark-color);
+    color:var(--light-color);
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .content *{
+    transform: translateY(-70%);
+    transition: all 0.3s ease;
+    opacity: 0;
+  }
+  
+  .content h2{
+    font-size: 35px;
+    margin: 15px;
+    font-weight: 700;
+  }
+  
+  .content h3{
+    font-size: 23px;
+    text-transform: uppercase;
+  }
+  
+  .card:hover .content{
+    opacity: 1;
+  }
+  
+  .card:hover .content *{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .content {
+    padding: 20px;
+  } 
+  
+  
+  
+  
+  
+  
+  
+  /*MEDIA QUERIES*/
+  @media(max-width:1186px){
+    .maptext{
+      margin-right: 0%;
+    }
+    .mapa svg{
+      margin-left: 0%;
+    } 
+  }

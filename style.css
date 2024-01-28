@@ -39,15 +39,15 @@ body{
   background: var(--light-color);
 }
 
-.bloque, main .bloque1, main .bloque2, main .bloque5{
+.bloque, .bloque1, .bloque2, .bloque5{
   padding: 2rem 9%;
 
 }
 
 /* Diseño Botón */
 .btn, 
-main .bloque1 .btn,
-main .bloque2 .btn{
+.bloque1 .btn,
+.bloque2 .btn{
   margin-top: 1rem;
   padding: .9rem 3rem;
   border-radius:.5rem;
@@ -59,8 +59,8 @@ main .bloque2 .btn{
   text-decoration: none;
 }
 .btn:hover, 
-main .bloque1 .btn:hover, 
-main .bloque2 .btn:hover{
+.bloque1 .btn:hover, 
+.bloque2 .btn:hover{
   background: var(--bright-color);
 }
 
@@ -123,27 +123,27 @@ header .fa-bars{
 }
 
 /* PRIMEROS 2 BLOQUES*/
-main .bloque1 , main .bloque2{
+.bloque1 , .bloque2{
   height: 30rem;
   display: flex;
   align-items: center;
   justify-content: center;
 
 }
-main .bloque1{
+.bloque1{
   flex-direction: column;
   flex-wrap: wrap;
   
 }
-main .bloque2 {
+.bloque2 {
   flex-wrap: wrap-reverse;
   flex-direction: column-reverse;
 }
-main .bloque1 .texto, main .bloque2 .texto{
+.bloque1 .texto, .bloque2 .texto{
   text-align: center;
 
 }
-main .bloque1 img, main .bloque2 img{
+.bloque1 img, .bloque2 img{
   width: 500px;
   height:300px;
   border-radius: .5rem;
@@ -208,7 +208,7 @@ main .bloque1 img, main .bloque2 img{
   position: relative;
   font-size: 30px; 
 }
-main .bloque4 .textobloque4{
+.bloque4 .textobloque4{
   top:50%; left:50%;transform: translate(-50%, -50%); position:absolute;
   color: #EBECE9; 
   width: 100%;
@@ -216,46 +216,41 @@ main .bloque4 .textobloque4{
 } */
 
 /*BLOQUE 5*/
-main .bloque5{
+.bloque5{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: row; flex-wrap: wrap;
   align-items:center;
   justify-content: center;
+
 }
-main .bloque5 .contenedor {
-  text-align: center;
-  padding:4rem;
-}
-main .bloque5 img {
-  max-width: 50%;
+
+.bloque5 h1, .bloque5 p, .bloque5 img {
   padding:1rem;
-  
+  text-align: center;
 }
 
 /*BLOQUE 6*/
-main .bloque6{
-background-color:#415A77;
-  height: 500px;
+.bloque6{
+  background-color:#415A77;
 }
-main .bloque6 .all-cards{
+.bloque6 .all-cards{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 4rem;
 }
-main .bloque6 .all-cards .card{
+.bloque6 .all-cards .card{
   padding: 10px;
   margin: 3rem;
   width: 20rem;
   height: 40rem;
 }  
-main .bloque6 .all-cards .card img{
+.bloque6 .all-cards .card img{
 width: 15rem;
 height: 15rem;
 padding:.5rem;
 }
-main .bloque6 .all-cards .card .card-body .btn{
+.bloque6 .all-cards .card .card-body .btn{
   margin-top: 1rem;
   padding: .9rem 3rem;
   border-radius:.5rem;
@@ -266,22 +261,21 @@ main .bloque6 .all-cards .card .card-body .btn{
   font-weight: 500;
   text-decoration: none;
 }
-main .bloque6 .all-cards .card .card-body .btn:hover{
+.bloque6 .all-cards .card .card-body .btn:hover{
   background: var(--bright-color);
 }
 
-main .bloque7{
-  height: 50rem;
-}
+
 
 /*FOOTER*/
-.footer .credit{
+section .footer{
   text-align: center;
   padding:2.5rem;
   margin-top: 2.5rem;
   font-size: 2rem;
   color:var(--black);
   border-top: .1rem solid rgb(0, 0, 0,.1);
+  z-index: 1000;
 }
 
 
@@ -298,141 +292,15 @@ main .bloque7{
 #btn-back-to-top img{
   width: 2rem;
   height: 2rem;
-} */
-
-/* style map */
-.mapa{
-  position:relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap:10px;
-  margin: 50px;
-  justify-content: center;
-  align-items: center;
-
-  margin-top: 10rem;
 }
-.maptext{
-  font-size: 20px;
-  position: relative;
-  float: right;
-  flex: 1;
-  padding: 2rem;
-  margin-right: 20%;
-
-}
-.mapa svg{
-  margin-left: 20%;
-}
-path{
-  fill: var(--maincolor);
-}
-path:hover{
-  fill: var(--bright-color);
-}
-.main{
-  position:relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;  
-
-}
-
-.texto{
-text-align: justify;
-  flex: 1;
-  padding: 5%;
-  font-size: 1.5rem;
-}
-
-.texto h1{
-  text-align: center;
-  font-size: 300%;
-}
-
-.sidecards{
-  margin: 4rem;
-  position: relative;
-  justify-content: right;
-
-  margin-top: 20%;
-
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.card{
-  height: 300px;
-  width: 300px;
-  padding: 20px;
-  background-size:cover;
-  cursor: pointer;
-}
-
-.content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color:var(--dark-color);
-  color:var(--light-color);
-  width: 100%;
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-
-.content *{
-  transform: translateY(-70%);
-  transition: all 0.3s ease;
-  opacity: 0;
-}
-
-.content h2{
-  font-size: 35px;
-  margin: 15px;
-  font-weight: 700;
-}
-
-.content h3{
-  font-size: 23px;
-  text-transform: uppercase;
-}
-
-.card:hover .content{
-  opacity: 1;
-}
-
-.card:hover .content *{
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.content {
-  padding: 20px;
-} 
-
-
-
-
-
 
 
 /*MEDIA QUERIES*/
-@media(max-width:1186px){
-  .maptext{
-    margin-right: 0%;
-  }
-  .mapa svg{
-    margin-left: 0%;
-  } 
-}
 @media (max-width:991px){
   html{
     font-size: 55%;
   }
-  main .bloque1, main .bloque2{
+  .bloque1, .bloque2{
     height: 60rem;
     display: flex;
     flex-wrap: wrap;
@@ -440,10 +308,10 @@ text-align: justify;
   }
 
 
-  main .bloque6{
+  .bloque6{
     height: 1000px;
   }
-  main .bloque6 .all-cards{
+  .bloque6 .all-cards{
     flex-direction: row;
     flex-wrap: wrap;
 
@@ -458,7 +326,6 @@ text-align: justify;
   html{
     scroll-padding-top: 0;
   }
-
   header .fa-bars{
     display: block;
   }
@@ -480,16 +347,10 @@ text-align: justify;
     display: block;
     width: 100%;
   }
-
-
-
-
-  main .bloque5 {
+  .bloque5 {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
-
 }
 
 @media (max-width:450px){
